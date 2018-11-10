@@ -12,14 +12,14 @@ cache:
 script:
 - npm run build
 
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  keep-history: true
-  local-dir: dist/angular-exemplify-demo
-  on:
-    branch: master
+# deploy:
+#   provider: pages
+#   skip-cleanup: true
+#   github-token: $GITHUB_TOKEN
+#   keep-history: true
+#   local-dir: dist
+#   on:
+#     branch: master
 
 after_success:
   - npm run travis-deploy-once "npm run semantic-release"

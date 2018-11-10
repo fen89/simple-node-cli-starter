@@ -17,6 +17,7 @@
     "ts-node": "ts-node ./src/cli.ts",
     "build": "tsc",
     "watch": "tsc --watch",
+    "lint": "lint-staged",
     "precommit": "lint-staged",
     "commit": "git-cz",
     "commitmsg": "commitlint -e $GIT_PARAMS",
@@ -52,7 +53,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && npm run lint-lib",
+      "pre-commit": "npm run lint",
       "commit-msg": "commitlint --edit"
     }
   },

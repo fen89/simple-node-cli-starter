@@ -1,5 +1,7 @@
 # Node CLI Starter
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/fen89/simple-node-cli-starter.svg)](https://greenkeeper.io/)
+
 Ready for creating interactive node command line interfaces, including a few tools to get started right away:
 
 - [Colors](https://github.com/marak/colors.js/) for colorizing the node console output
